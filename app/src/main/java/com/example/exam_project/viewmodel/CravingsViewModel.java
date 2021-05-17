@@ -1,9 +1,7 @@
 package com.example.exam_project.viewmodel;
 
 import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
 import com.example.exam_project.model.Craving;
 import com.example.exam_project.repositories.CravingRepository;
 

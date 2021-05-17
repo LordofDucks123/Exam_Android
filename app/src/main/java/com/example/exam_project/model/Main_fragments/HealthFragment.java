@@ -5,13 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.exam_project.Adapters.HealthAdapter;
 import com.example.exam_project.R;
 import com.example.exam_project.viewmodel.HealthViewModel;
@@ -20,7 +18,6 @@ public class HealthFragment extends Fragment implements HealthAdapter.OnListItem
 
     HealthViewModel viewModel;
     RecyclerView recyclerView;
-
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_health, container, false);
@@ -35,6 +32,7 @@ public class HealthFragment extends Fragment implements HealthAdapter.OnListItem
 
         return view;
     }
+
     public void onListItemClick(int clickedItemIndex) {
         int healthNumber = clickedItemIndex + 1;
            switch (healthNumber){

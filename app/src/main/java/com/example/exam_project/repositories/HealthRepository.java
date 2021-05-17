@@ -2,10 +2,8 @@ package com.example.exam_project.repositories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import com.example.exam_project.R;
 import com.example.exam_project.model.Health;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,9 +25,9 @@ public class HealthRepository {
         healthList.add(new Health("Increased chance of lung cancer", R.drawable.hp9));
         healthList.add(new Health("Increase in Heart diseases", R.drawable.hp10));
 
-
         searchedHealth.setValue(healthList);
     }
+
     public void searchHealth(String query){
         List<Health> result = new ArrayList<>();
         for (Health h : healthList) {
@@ -41,6 +39,7 @@ public class HealthRepository {
     }
 
     public LiveData<List<Health>> getSearchedHealth() {
+
         return searchedHealth;
     }
 }

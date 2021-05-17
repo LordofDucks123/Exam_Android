@@ -1,6 +1,7 @@
 package com.example.exam_project.model;
 
 public class Health {
+
     private String hName;
     private int hId;
 

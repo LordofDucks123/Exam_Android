@@ -2,10 +2,8 @@ package com.example.exam_project.repositories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
-
 import com.example.exam_project.R;
 import com.example.exam_project.model.Craving;
-
 import java.util.ArrayList;
 import java.util.List;
 

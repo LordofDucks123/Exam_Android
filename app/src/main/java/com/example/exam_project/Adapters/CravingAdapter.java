@@ -7,15 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.exam_project.R;
 import com.example.exam_project.model.Craving;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class CravingAdapter extends RecyclerView.Adapter<CravingAdapter.ViewHolder> {
-//sssssss
+
     private List<Craving> cravingList = new ArrayList<>();
     final private OnListItemClickListener mOnListItemClickListener;
     public CravingAdapter(OnListItemClickListener listener){
