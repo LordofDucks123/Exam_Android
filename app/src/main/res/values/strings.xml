@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Exam_project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Lets Quit Smoking!</string>
+    <string name="nav_header_subtitle">Letsquit@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_numbers">Calculate your savings</string>
+    <string name="menu_health">Health</string>
+    <string name="menu_cravings">Cravings</string>
+    <string name="craving_title"> Which craving do you have? Click on one to get distracted!</string>
+    <string name="health_title"> Below is some of the disadvantages of smoking. Click one to read more about it!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="demo_fragment">DEMO fragment</string>
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.exam_project.model.Main_fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_numbers"
+        android:name="com.example.exam_project.model.Main_fragments.NumbersFragment"
+        android:label="@string/menu_numbers"
+        tools:layout="@layout/fragment_numbers" />
+
+    <fragment
+        android:id="@+id/nav_health"
+        android:name="com.example.exam_project.model.Main_fragments.HealthFragment"
+        android:label="@string/menu_health"
+        tools:layout="@layout/fragment_health" />
+
+    <fragment
+        android:id="@+id/nav_cravings"
+        android:name="com.example.exam_project.model.Main_fragments.CravingsFragment"
+        android:label="Cravings"
+        tools:layout="@layout/fragment_cravings"/>
+</navigation>
