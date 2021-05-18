@@ -34,4 +34,10 @@ hvad der kunne være fedt at have med i appen, og hvordan man kan differentierer
 * En side der viser hvor mange kilometer, man ville kunne kører i en Taxi for det beløb man har sparet indtil videre. 
 * En side der løbende viser de sundhedsmæssige fordele man har opnået.
 * En side der giver brugeren mulighed for at indtaste et beløb, som er "målet", dette beløb kunne være tiltænkt en rejse, nyt tv eller lign. 
-* En Log in funktion. 
+* En Log in funktion. <br>
+
+
+<b> Løbende Problemer:</b>
+* Kunne ikke få toasts til at virke. (Skift enhed)
+* Firebase gad ikke virke
+
