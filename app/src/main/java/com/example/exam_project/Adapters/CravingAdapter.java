@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CravingAdapter extends RecyclerView.Adapter<CravingAdapter.ViewHolder> {
-//hejsas
+
     private List<Craving> cravingList = new ArrayList<>();
     final private OnListItemClickListener mOnListItemClickListener;
     public CravingAdapter(OnListItemClickListener listener){
