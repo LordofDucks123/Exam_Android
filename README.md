@@ -37,7 +37,7 @@ hvad der kunne være fedt at have med i appen, og hvordan man kan differentierer
 * En Log in funktion. <br>
 
 
-<b> Løbende Problemer:</b>
+<b> Største Problemer:</b>
 * Kunne ikke få toasts til at virke. (Skift enhed)
-* Firebase gad ikke virke
+* Kunne ikke få Firebase implementeret
 
