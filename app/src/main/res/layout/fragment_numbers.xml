@@ -23,7 +23,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/input1"
-        android:hint="Price of a pack of cigareets?" />
+        android:hint="@string/price_of_a_pack_of_cigareets" />
 
     <EditText
         android:layout_width="match_parent"
@@ -31,7 +31,7 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/input2"
-        android:hint="How many do you smoke a day?" />
+        android:hint="@string/how_many_do_you_smoke_a_day" />
 
     <EditText
         android:layout_width="match_parent"
@@ -39,12 +39,12 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/input3"
-        android:hint="How many days since last cigareets?" />
+        android:hint="@string/how_many_days_since_last_cigareets" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:id="@+id/bt_calculate"
         android:layout_gravity="center_horizontal" />
 
@@ -53,11 +53,11 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/calv_result"
-            android:textSize="15dp"
+            android:textSize="25sp"
             android:layout_centerInParent="true" />
 
     </RelativeLayout>
