@@ -19,7 +19,7 @@ public class CravingAdapter extends RecyclerView.Adapter<CravingAdapter.ViewHold
     public CravingAdapter(OnListItemClickListener listener){
         mOnListItemClickListener = listener;
     }
-//Okay
+//Okays
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
