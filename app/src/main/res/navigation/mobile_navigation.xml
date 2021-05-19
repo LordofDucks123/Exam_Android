@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.exam_project.model.Main_fragments.HomeFragment"
+        android:name="com.example.exam_project.view.view.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_numbers"
-        android:name="com.example.exam_project.model.Main_fragments.NumbersFragment"
+        android:name="com.example.exam_project.view.view.NumbersFragment"
         android:label="@string/menu_numbers"
         tools:layout="@layout/fragment_numbers" />
 
     <fragment
         android:id="@+id/nav_health"
-        android:name="com.example.exam_project.model.Main_fragments.HealthFragment"
+        android:name="com.example.exam_project.view.view.HealthFragment"
         android:label="@string/menu_health"
         tools:layout="@layout/fragment_health" />
 
     <fragment
         android:id="@+id/nav_cravings"
-        android:name="com.example.exam_project.model.Main_fragments.CravingsFragment"
+        android:name="com.example.exam_project.view.view.CravingsFragment"
         android:label="Cravings"
         tools:layout="@layout/fragment_cravings"/>
 </navigation>

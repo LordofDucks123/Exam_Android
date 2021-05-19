@@ -1,4 +1,4 @@
-package com.example.exam_project.model.Main_fragments;
+package com.example.exam_project.view.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -47,7 +47,7 @@ public class NumbersFragment extends Fragment {
         double i1 = Double.parseDouble(input1.getText().toString());
         double i2 = Double.parseDouble(input2.getText().toString());
         double i3 = Double.parseDouble(input3.getText().toString());
-        double result = i1/20*i2*i3;
+        double result = i1 / 20 * i2 * i3;
 
         calv_result.setText("You have saved: " + result + " Crowns! Congratulations!");
     }

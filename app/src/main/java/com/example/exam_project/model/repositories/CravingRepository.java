@@ -1,9 +1,11 @@
-package com.example.exam_project.repositories;
+package com.example.exam_project.model.repositories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
 import com.example.exam_project.R;
 import com.example.exam_project.model.Craving;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,8 @@ public class CravingRepository {
 
         searchedCraving.setValue(cravingList);
     }
-    public void searchCraving(String query){
+
+    public void searchCraving(String query) {
         List<Craving> result = new ArrayList<>();
         for (Craving c : cravingList) {
             if (c.getName().toLowerCase().contains(query.toLowerCase())) {

@@ -6,18 +6,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.exam_project.R;
 import com.example.exam_project.model.Health;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder>{
+public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder> {
 
     private List<Health> healthList = new ArrayList<>();
     final private OnListItemClickListener mOnListItemClickListener;
-    public HealthAdapter(OnListItemClickListener listener){
+
+    public HealthAdapter(OnListItemClickListener listener) {
         mOnListItemClickListener = listener;
     }
 
@@ -37,6 +41,7 @@ public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder
         this.healthList = healthList;
         notifyDataSetChanged();
     }
+
     public int getItemCount() {
 
         return healthList.size();
@@ -55,12 +60,14 @@ public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder
 
 
         }
+
         @Override
         public void onClick(View v) {
             mOnListItemClickListener.onListItemClick(getBindingAdapterPosition());
         }
 
     }
+
     public interface OnListItemClickListener {
         void onListItemClick(int clickedItemIndex);
     }

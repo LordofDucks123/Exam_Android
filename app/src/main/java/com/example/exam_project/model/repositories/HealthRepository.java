@@ -1,9 +1,11 @@
-package com.example.exam_project.repositories;
+package com.example.exam_project.model.repositories;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
+
 import com.example.exam_project.R;
 import com.example.exam_project.model.Health;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +13,7 @@ public class HealthRepository {
 
     private final List<Health> healthList;
     private final MutableLiveData<List<Health>> searchedHealth = new MutableLiveData<>();
+
     public HealthRepository() {
 
         healthList = new ArrayList<>();
@@ -28,7 +31,7 @@ public class HealthRepository {
         searchedHealth.setValue(healthList);
     }
 
-    public void searchHealth(String query){
+    public void searchHealth(String query) {
         List<Health> result = new ArrayList<>();
         for (Health h : healthList) {
             if (h.getName().toLowerCase().contains(query.toLowerCase())) {

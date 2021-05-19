@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="#F5F5DC"
     android:orientation="vertical"
-    tools:context=".model.Main_fragments.HealthFragment">
+    tools:context=".view.view.HealthFragment">
 
 
     <TextView

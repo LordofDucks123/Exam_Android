@@ -1,15 +1,17 @@
-package com.example.exam_project.model.Main_fragments;
+package com.example.exam_project.view.view;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.exam_project.Adapters.CravingAdapter;
 import com.example.exam_project.R;
 import com.example.exam_project.viewmodel.CravingsViewModel;
@@ -25,6 +27,7 @@ public class CravingsFragment extends Fragment implements CravingAdapter.OnListI
         recyclerView = view.findViewById(R.id.rv);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
+
         CravingAdapter adapter = new CravingAdapter(this);
         recyclerView.setAdapter(adapter);
 
@@ -35,12 +38,13 @@ public class CravingsFragment extends Fragment implements CravingAdapter.OnListI
 
 
     }
+
     public void onListItemClick(int clickedItemIndex) {
         int cravingNumber = clickedItemIndex + 1;
         switch (cravingNumber) {
             case 1:
-            Toast.makeText(getActivity(), "Whistle or hum for a while!: " + cravingNumber, Toast.LENGTH_LONG).show();
-            break;
+                Toast.makeText(getActivity(), "Whistle or hum for a while!: " + cravingNumber, Toast.LENGTH_LONG).show();
+                break;
             case 2:
                 Toast.makeText(getActivity(), "Drink a glass of water. It's surprising how well this works: " + cravingNumber, Toast.LENGTH_LONG).show();
                 break;

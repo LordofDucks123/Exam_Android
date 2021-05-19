@@ -1,11 +1,13 @@
-package com.example.exam_project.model.Main_fragments;
+package com.example.exam_project.view.view;
 
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
 import android.widget.Toast;
+
 import com.example.exam_project.R;
 import com.google.android.material.navigation.NavigationView;
+
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/item_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,13 +8,22 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#F5F5DC"
+    >
+
+    <ImageView
+        android:id="@+id/image_pig"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:src="@drawable/pig"
+        android:layout_marginBottom="25dp"/>
 
     <TextView
         android:layout_width="wrap_content"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:layout_height="wrap_content"
-        android:text="How Much have you Saved?"
+        android:text="@string/how_much_have_you_saved"
         android:id="@+id/calv_title"
         android:layout_gravity="center_horizontal" />
 
@@ -46,7 +56,8 @@
         android:layout_height="wrap_content"
         android:text="@string/calculate"
         android:id="@+id/bt_calculate"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"

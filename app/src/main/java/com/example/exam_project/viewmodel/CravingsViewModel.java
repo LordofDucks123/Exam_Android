@@ -2,8 +2,9 @@ package com.example.exam_project.viewmodel;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.ViewModel;
+
 import com.example.exam_project.model.Craving;
-import com.example.exam_project.repositories.CravingRepository;
+import com.example.exam_project.model.repositories.CravingRepository;
 
 import java.util.List;
 

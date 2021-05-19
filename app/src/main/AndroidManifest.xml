@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Exam_project">
         <activity
-            android:name=".model.Main_fragments.MainActivity"
+            android:name=".view.view.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Exam_project.NoActionBar">
             <intent-filter>
