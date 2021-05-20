@@ -40,4 +40,5 @@ hvad der kunne være fedt at have med i appen, og hvordan man kan differentierer
 <b> Største Problemer:</b>
 * Kunne ikke få toasts til at virke. (Skift enhed)
 * Kunne ikke få Firebase implementeret
+* Implementeringen af MVVM var meget vanskelig.
 
