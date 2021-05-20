@@ -21,6 +21,25 @@ public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder
     private List<Health> healthList = new ArrayList<>();
     final private OnListItemClickListener mOnListItemClickListener;
 
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+
+        TextView HealthDescription;
+        ImageView icon;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            HealthDescription = itemView.findViewById(R.id.HealthDescription);
+            icon = itemView.findViewById(R.id.picture);
+            itemView.setOnClickListener(this);
+
+        }
+
+        @Override
+        public void onClick(View v) {
+            mOnListItemClickListener.onListItemClick(getBindingAdapterPosition());
+        }
+    }
+
     public HealthAdapter(OnListItemClickListener listener) {
         mOnListItemClickListener = listener;
     }
@@ -47,26 +66,6 @@ public class HealthAdapter extends RecyclerView.Adapter<HealthAdapter.ViewHolder
         return healthList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-
-        TextView HealthDescription;
-        ImageView icon;
-
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            HealthDescription = itemView.findViewById(R.id.HealthDescription);
-            icon = itemView.findViewById(R.id.picture);
-            itemView.setOnClickListener(this);
-
-
-        }
-
-        @Override
-        public void onClick(View v) {
-            mOnListItemClickListener.onListItemClick(getBindingAdapterPosition());
-        }
-
-    }
 
     public interface OnListItemClickListener {
         void onListItemClick(int clickedItemIndex);

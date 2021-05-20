@@ -47,9 +47,9 @@ public class CravingAdapter extends RecyclerView.Adapter<CravingAdapter.ViewHold
     @NonNull
     @Override
     //This is the layout we are gonna use for the single item in our RecycleView
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public CravingAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.craving_list_item, parent, false);
-        return new ViewHolder(view);
+        return new CravingAdapter.ViewHolder(view);
     }
 
     //Get the data from the single craving java object into the views of our cravingholder

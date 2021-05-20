@@ -31,16 +31,6 @@ public class HealthRepository {
         searchedHealth.setValue(healthList);
     }
 
-    public void searchHealth(String query) {
-        List<Health> result = new ArrayList<>();
-        for (Health h : healthList) {
-            if (h.getName().toLowerCase().contains(query.toLowerCase())) {
-                result.add(h);
-            }
-        }
-        searchedHealth.setValue(result);
-    }
-
     public LiveData<List<Health>> getSearchedHealth() {
 
         return searchedHealth;

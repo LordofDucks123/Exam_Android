@@ -26,6 +26,7 @@ public class HealthFragment extends Fragment implements HealthAdapter.OnListItem
         recyclerView = view.findViewById(R.id.rvh);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
+
         HealthAdapter adapter = new HealthAdapter(this);
         recyclerView.setAdapter(adapter);
 

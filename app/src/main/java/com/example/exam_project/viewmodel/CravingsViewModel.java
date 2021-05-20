@@ -12,14 +12,10 @@ public class CravingsViewModel extends ViewModel {
 
     CravingRepository repository = new CravingRepository();
 
-    public void searchCraving(String query) {
 
-        repository.searchCraving(query);
-    }
+    public LiveData<List<Craving>> getAllCravings() {
 
-    public LiveData<List<Craving>> getSearchedCraving() {
-
-        return repository.getSearchedCraving();
+        return repository.getAllCravings();
     }
 
 

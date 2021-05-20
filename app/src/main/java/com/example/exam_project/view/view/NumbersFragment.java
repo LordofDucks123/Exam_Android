@@ -13,18 +13,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.exam_project.R;
-import com.example.exam_project.viewmodel.NumbersViewModel;
 
 public class NumbersFragment extends Fragment {
 
-    NumbersViewModel numbersViewModel;
     private EditText input1;
     private EditText input2;
     private EditText input3;
     private TextView calv_result;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        numbersViewModel = new ViewModelProvider(this).get(NumbersViewModel.class);
         View view = inflater.inflate(R.layout.fragment_numbers, container, false);
 
         input1 = view.findViewById(R.id.input1);
@@ -36,6 +33,7 @@ public class NumbersFragment extends Fragment {
         bt_calculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 makeCalculations();
             }
         });
