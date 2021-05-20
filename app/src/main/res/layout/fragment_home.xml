@@ -8,7 +8,6 @@
     android:background="#F5F5DC"
     >
 
-
     <TextView
         android:id="@+id/text_home"
         android:layout_width="match_parent"

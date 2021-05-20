@@ -20,8 +20,18 @@
         <item
             android:id="@id/nav_cravings"
             android:icon="?android:attr/alertDialogIcon"
-            android:title="@string/menu_cravings"
-            />
+            android:title="@string/menu_cravings" />
+
+        <item
+            android:id="@id/nav_distance"
+            android:icon="@drawable/ic_baseline_drive"
+            android:title="@string/distance" />
+
+        <item
+            android:id="@id/nav_goal"
+            android:icon="@drawable/ic_baseline_money"
+            android:title="@string/my_goal" />
+
     </group>
-    >
+
 </menu>

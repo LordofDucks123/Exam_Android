@@ -22,6 +22,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:textSize="25sp"
+        android:textColor="@color/black"
         android:layout_height="wrap_content"
         android:text="@string/how_much_have_you_saved"
         android:id="@+id/calv_title"

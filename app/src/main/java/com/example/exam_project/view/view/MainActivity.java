@@ -1,5 +1,6 @@
 package com.example.exam_project.view.view;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.Menu;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.nav_view);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_numbers, R.id.nav_health, R.id.nav_cravings)
+                R.id.nav_home, R.id.nav_numbers, R.id.nav_health, R.id.nav_cravings,R.id.nav_distance,R.id.nav_goal)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.settings) {
+            startActivityForResult(new Intent(android.provider.Settings.ACTION_SETTINGS), 0);
             Toast.makeText(this, "Settings is selected", Toast.LENGTH_SHORT).show();
             return true;
         }

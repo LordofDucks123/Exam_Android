@@ -23,6 +23,12 @@
     <string name="how_many_days_since_last_cigareets">How many days since last cigareets?</string>
     <string name="calculate">Calculate</string>
     <string name="how_much_have_you_saved">How Much have you Saved?</string>
+    <string name="distance">Distance</string>
+    <string name="my_goal">My Goal</string>
+    <string name="how_much_is_your_goal">How much is Your Goal?</string>
+    <string name="how_far_can_you_travel">How far can you travel?</string>
+    <string name="insert_your_goal_in_crowns_here">Insert your goal in crowns here!</string>
+    <string name="based_on_your_savings_you_could_drive">Based on your savings you could drive:</string>
 
 
 </resources>
