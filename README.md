@@ -42,3 +42,7 @@ hvad der kunne være fedt at have med i appen, og hvordan man kan differentierer
 * Kunne ikke få Firebase implementeret
 * Implementeringen af MVVM var meget vanskelig.
 
+<b> Youtube Link:</b>
+* https://www.youtube.com/watch?v=G9-Jfi1jyn8&ab_channel=FrederikHedetoft
+
+
