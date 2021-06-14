@@ -22,6 +22,7 @@ sjove, samt informationsgivende funktioner der skal gøre det nemmere for bruger
 * En side der giver brugeren mulighed for at indtaste et beløb, som er "målet", dette beløb kunne være tiltænkt en rejse, nyt tv eller lign. 
 * En side der viser hvor mange kilometer, man ville kunne kører i en Taxi for det beløb man har sparet indtil videre. 
 * En side der løbende viser de sundhedsmæssige fordele man har opnået.
+* Log in Side.
 
 
 <b>Motivation:</b> 
